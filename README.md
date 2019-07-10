@@ -29,23 +29,25 @@ git clone https://gitlab.com/howiehowerton/app-protect-djangonv-mac.git
 ```
 cd app-protect-djangonv-mac/IMMUNIO/
 ```
-3. Run the docker-build.sh script to build the two images (djangonv and djangonv-immunio).
+3. Update the immunio.ini with your App Protect Group's Key and Secret values:
+
+4. Run the docker-build.sh script to build the two images (djangonv and djangonv-immunio).
 ```
 ./docker-build.sh
 ```
-4. Run the non-protected djangonv image
+5. Run the non-protected djangonv image
 ```
 docker run -d -p 8000:8000 djangonv
 ```
-5. Follow the instructions in exploits.md to exploit the application
+6. Follow the instructions in exploits.md to exploit the application
 
-6. Stop the djangonv container
+7. Stop the djangonv container
 ```
 docker stop <image_id>
 ```
-7. Run the App Protect (django-immunio) image and pass in your App Protect Group's key/secret
+8. Run the App Protect (django-immunio) image and pass in your App Protect Group's key/secret
 ```
-docker run -d -p 8000:8000 -e IMMUNIO_KEY='your-key-goes-here' -e IMMUNIO_SECRET='your-secret-goes-here'  djangonv-immunio
+docker run -d -p 8000:8000 djangonv-immunio
 ```
 Note: To obtain your Key and Secret, you'll need to:
 * Log into your App Protect account

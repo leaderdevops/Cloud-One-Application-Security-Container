@@ -89,5 +89,17 @@
       },
       "model":"taskManager.project",
       "pk":8
+   },
+   {
+      "fields":{
+         "users_assigned":[
+          6
+         ],
+         "text":"This is a demo project",
+         "title":"demo project",
+         "start_date":"2019-08-01T00:00:00.000Z"
+      },
+      "model":"taskManager.project",
+      "pk":9
    }
 ]

@@ -68,6 +68,20 @@
       "is_staff" : false,
       "is_active" : true
     }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "first_name" : "user",
+      "last_name" : "user",
+      "username" : "user",
+      "password": "md5$yTjbDfw1JYgP$b24e1da5ea56052259709acc8f2bc500",
+      "is_superuser" : false,
+      "email" : "user@trendmicro.com",
+      "is_staff" : false,
+      "is_active" : true
+    }
   }
   
 ]

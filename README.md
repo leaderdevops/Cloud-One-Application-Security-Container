@@ -1,9 +1,7 @@
 # app-protect-djangonv-mac
-Sample Django application for App Protect demos (Locally on a Mac)
+Sample Django application for App Protect demos
 ## Detailed Description
 This is a sample, vulnerable-on-purpose, Django application that can be used to demo Deep Security App Protect.
-
-The usage instructions/scripts in this repo are designed to work on Mac hosts only.  If you are using Linux/Unix, you'll need to modify the scripts appropriately.
 
 Using the instructions below will create 2 docker images (one without and one with App Protect installed).  Instructions for exploiting the vulernable app are located within the exploits.md file.
 
@@ -16,10 +14,7 @@ See:  http://github.com/nVisium/django.nV
 
  python -m smtpd -n -c DebuggingServer localhost:1025
 
-
-
 ## Pre-Requisites for Usage
-* A Mac/Macbook Pro
 * Git
 * Docker
 * A Deep Security App Protect account
@@ -53,16 +48,16 @@ cd IMMUNIO/
 ```
 6. Run the non-protected djangonv image
 ```
-docker run -d -p 8000:8000 djangonv
+docker run -d -p 8000:8000 --name djangonv djangonv
 ```
 7. Follow the instructions in exploits.md to exploit the application
 
 8. Stop the djangonv container
 ```
-docker stop <image_id>
+docker stop djangonv
 ```
 9. Run the App Protect (django-immunio) image
 ```
-docker run -d -p 8000:8000 djangonv-immunio
+docker run -d -p 8000:8000 --name djangonv-immunio -e IMMUNIO_KEY=<KEY> -e IMMUNIO_SECRET=<SECRET> djangonv-immunio
 ```
-10. Follow the instructions in exploits.md to exploit the application.  Show how the exploits are blocked by App Protect.
+10. Follow the instructions in [exploits.md](blob/master/exploits.md) to exploit the application.  Show how the exploits are blocked by App Protect.

@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY upstream/ /usr/src/app
 COPY upstream/reset_db.sh /reset_db.sh
 # Get the "built" version of runapp.sh
-COPY build/runapp.sh /runapp.sh
+COPY upstream/runapp.sh /runapp.sh
 
 # Initialize app database
 RUN ["/reset_db.sh"]
@@ -22,7 +22,7 @@ RUN pip install https://download.immun.io/internal/python/immunio-3.1.2-cp26.cp2
 #COPY immunio.ini /usr/src/app
 
 # Override the original `wsgi.py` version with the IMMUNIO-ized version.
-COPY build/wsgi.py /usr/src/app/taskManager/wsgi.py
+#COPY build/wsgi.py /usr/src/app/taskManager/wsgi.py
 
 EXPOSE 8000
 

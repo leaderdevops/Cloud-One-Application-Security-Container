@@ -1,3 +1,4 @@
+import immunio.start
 """
 WSGI config for projmanager project.
 

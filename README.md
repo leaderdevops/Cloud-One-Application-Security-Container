@@ -10,12 +10,6 @@ django-nV was created by the fine folks over at nVisium.
 
 See:  http://github.com/nVisium/django.nV
 
-NOTE: We're missing the smtp functionality for the 'forgot password' feature. To enable that we'd need to add:
-
-```
-python -m smtpd -n -c DebuggingServer localhost:1025
-```
-
 ## Pre-Requisites for Usage
 
 * Docker

@@ -26,7 +26,7 @@ python -m smtpd -n -c DebuggingServer localhost:1025
 1. Download & run the container:
 
     ```
-    docker run --rm -d -p 8000:8000 --name djangonv-app-protect -e IMMUNIO_KEY=<KEY> -e IMMUNIO_SECRET=<SECRET> oznetnerd/djangonv-app-protect
+    docker run --rm -d -p 8000:8000 --name djangonv-app-protect -e IMMUNIO_KEY=<KEY> -e IMMUNIO_SECRET=<SECRET> howiehowerton/djangonv-app-protect
     ```
 Note: To obtain your Key and Secret, you'll need to:
 * Log into your App Protect account

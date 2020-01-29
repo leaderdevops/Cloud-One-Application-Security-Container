@@ -17,7 +17,8 @@ COPY upstream/runapp.sh /runapp.sh
 RUN ["/reset_db.sh"]
 
 # Add App Protect
-RUN pip install https://download.immun.io/internal/python/immunio-3.2.3-cp26.cp27.cp33.cp34.cp35.cp36.cp37-none-manylinux1_x86_64.whl
+#RUN pip install https://download.immun.io/internal/python/immunio-3.2.3-cp26.cp27.cp33.cp34.cp35.cp36.cp37-none-manylinux1_x86_64.whl
+RUN pip install trend_app_protect
 # Note:  NO need for the following if passing environment variables via command line
 #COPY immunio.ini /usr/src/app
 

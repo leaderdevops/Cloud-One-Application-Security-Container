@@ -1,4 +1,4 @@
-import immunio.start
+import trend_app_protect.start
 """
 WSGI config for projmanager project.
 

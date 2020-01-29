@@ -27,7 +27,7 @@ Note: To obtain your Key and Secret, you'll need to:
 * Add a new group
 * Copy your Key and Secret
 
-The Cloud One Application Security library (which is ADDed via the Dockerfile) uses the Key and Secret to identify the App Protect group to which the application belongs.
+The Cloud One Application Security library (which is ADDed via the Dockerfile) uses the Key and Secret to identify the group to which the application belongs.
 
 2. Follow the instructions in [exploits.md](exploits.md) to exploit the application.  Demonstrate that the exploits work against the vulnerable app.
 

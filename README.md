@@ -23,7 +23,7 @@ See:  http://github.com/nVisium/django.nV
     docker run --rm -d -p 8000:8000 --name djangonv-app-protect -e TREND_AP_KEY=<KEY> -e TREND_AP_SECRET=<SECRET> howiehowerton/djangonv-app-protect
     ```
 Note: To obtain your Key and Secret, you'll need to:
-* Log into your App Protect account (https://dashboard.app-protect.trendmicro.com/)
+* Log into your Cloud One Application Security account (https://dashboard.app-protect.trendmicro.com/)
 * Add a new group
 * Copy your Key and Secret
 

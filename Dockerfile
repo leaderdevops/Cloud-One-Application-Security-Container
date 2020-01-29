@@ -16,7 +16,7 @@ COPY upstream/runapp.sh /runapp.sh
 # Initialize app database
 RUN ["/reset_db.sh"]
 
-# Add App Protect
+# Add Cloud One Application Security
 RUN pip install trend_app_protect
 
 

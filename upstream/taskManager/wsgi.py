@@ -1,4 +1,4 @@
-import trend_app_protect.start
+# import trend_app_protect.start
 """
 WSGI config for projmanager project.
 
